@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: rgb(183, 142, 201);
+}
+
+body{
+    background-color: #2e0249;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1280px){
+    .media{
+        position: absolute;
+        top: 52rem;
+    }
+}
+
+button{
+    transition: background 0.4s;
+
+}
+
+button:hover{
+    background: #a91079;
+    border-color: #a91079;
+    color: white;
+    box-shadow: 0 0 2rem #720951;
+}
+
+button:active{
+    background-color: #720951;
+}
+
+input:focus{
+    color: #2e0249;
+    border-color: #a91079;
+    &::placeholder{
+        color: #2e0249;
+    }
+}
